@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">FavoriteMovies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="SHARE_VIA">Share via</string>
+    <string name="SUBJEK">This is Link by Apps Movie </string>
+    <string name="FORMAT_YYY_MM_DD">yyyy-MM-dd</string>
+    <string name="FORMAT_DAY_DD_MM_YYYY">EEEE, dd MMM yyyy</string>
+    <string name="release_date">Release Date</string>
+    <string name="release_date_sub">Release Date</string>
+    <string name="vote_average">Vote</string>
+    <string name="vote_average_sub">7.2</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="vote_count_sub">9292</string>
+    <string name="original_language">Language</string>
+    <string name="original_language_sub">en</string>
+    <string name="cari_filmmu_disini">Find your movie here !!!</string>
+    <string name="judul">Tittle</string>
+    <string name="overview">Overview</string>
+    <string name="date">Date</string>
+    <string name="detail">DETAIL</string>
+    <string name="share">Share</string>
+    <string name="name_fragment_now_playing">NOW PLAYING</string>
+    <string name="name_fragment_up_coming">UP COMING</string>
+    <string name="overview_post">overview post</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="string_popular_movie">Popular Movie</string>
+    <string name="string_favorite">Favorite</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="search">Search</string>
+    <string name="movie">Movie</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
