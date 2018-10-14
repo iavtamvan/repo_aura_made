@@ -102,15 +102,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MyViewHolder
                 intent.putExtra("vote", listMovie.get(position).getVoteAverage());
                 intent.putExtra("language", listMovie.get(position).getOriginalLanguage());
 
-//                Intent intent = new Intent(context, DetailActivity.class);
-//                intent.putExtra(Config.BUNDLE_ID, listMovie.get(position).getId());
-//                intent.putExtra(Config.BUNDLE_POSTER_IMAGE, BuildConfig.IMAGE + listMovie.get(position).getPosterPath());
-//                intent.putExtra(Config.BUNDLE_TITTLE, holder.tvTitle.getText().toString().trim());
-//                intent.putExtra(Config.BUNDLE_OVERVIEW, listMovie.get(position).getOverview());
-//                intent.putExtra(Config.BUNDLE_RELEASE_DATE, holder.tvDate.getText().toString().trim());
-//                intent.putExtra(Config.BUNDLE_VOTE_AVERAGE, listMovie.get(position).getVoteAverage());
-//                intent.putExtra(Config.BUNDLE_ORIGINAL_LANGUAGE, listMovie.get(position).getOriginalLanguage());
-//                intent.putExtra(Config.BUNDLE_BACKDROP_IMAGE, BuildConfig.IMAGE + listMovie.get(position).getBackdropPath());
                 context.startActivity(intent);
             }
         });

@@ -108,23 +108,18 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.MyView
         });
     }
 
-//    @Override
-//    public int getItemCount() {
-//        return listMovie.size();
-//    }
-
     @Override
     public int getItemCount() {
-        if (cursor == null) return 0;
-        return cursor.getCount();
+        return listMovie.size();
     }
 
-    private FavModel getItem(int position) {
-        if (!cursor.moveToPosition(position)) {
-            throw new IllegalStateException("Postion Invalid");
-        }
-        return new FavModel(cursor);
-    }
+//
+//    private FavModel getItem(int position) {
+//        if (!cursor.moveToPosition(position)) {
+//            throw new IllegalStateException("Postion Invalid");
+//        }
+//        return new FavModel(cursor);
+//    }
     @Override
     public Filter getFilter() {
         return new Filter() {

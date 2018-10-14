@@ -109,8 +109,7 @@ public class DetailActivity extends AppCompatActivity {
         vote = intent.getStringExtra("vote");
         language = intent.getStringExtra("language");
 
-        Log.d("TEST", "onCreatePOSTER COBA: " +  poster);
-        Log.d("TEST", "onCreateBACK COBA: " +  backdrop);
+//        Toast.makeText(this, "" + id_movie, Toast.LENGTH_SHORT).show();
 
         Glide.with(this).load("https://image.tmdb.org/t/p/w500/" + backdrop).error(R.drawable.ic_launcher_background).into(imgBackdrop);
         Glide.with(this).load("https://image.tmdb.org/t/p/w500" + poster).error(R.drawable.ic_launcher_background).into(imgPoster);
@@ -121,11 +120,13 @@ public class DetailActivity extends AppCompatActivity {
         tvOverview.setText(overview);
 
 
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        sharedPreferences = getApplicationContext().getSharedPreferences("SETTING", 0);
         Boolean favorit = sharedPreferences.getBoolean("Favorite"+ title, false);
+        Toast.makeText(this, "" + favorit, Toast.LENGTH_SHORT).show();
         if (favorit){
             btnFav.setAnimateFavorite(true);
             btnFav.setVisibility(View.GONE);
+
         }
         btnFav.setOnFavoriteChangeListener(
                 new MaterialFavoriteButton.OnFavoriteChangeListener(){
@@ -134,7 +135,7 @@ public class DetailActivity extends AppCompatActivity {
                         if (favorit){
                             SharedPreferences.Editor editor = sharedPreferences.edit();
 //                            editor.putBoolean("Favorite Added", true);
-                            editor.putBoolean("FAVORITE"+title,true);
+                            editor.putBoolean("Favorite"+title,true);
 
                             editor.commit();
                             save();
@@ -146,7 +147,7 @@ public class DetailActivity extends AppCompatActivity {
                             favoriteDataHelper.deleteFavorite(movie_id);
                             SharedPreferences.Editor editor = sharedPreferences.edit();
 //                            editor.putBoolean("Favorite Removed", true);
-                            editor.putBoolean("FAVORITE"+title,true);
+                            editor.putBoolean("Favorite"+title,true);
                             editor.commit();
                             Snackbar.make(buttonView, "Removed from Favorite",
                                     Snackbar.LENGTH_SHORT).show();

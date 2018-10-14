@@ -44,7 +44,7 @@ public class FavoriteDataHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String CREATE_TABLE_FAVORITE = "CREATE TABLE favorite (" +
                 Config.Movies._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                Config.Movies.ID + " INTEGER NOT NULL AUTOINCREMENT, " +
+                Config.Movies.ID + " INTEGER NOT NULL, " +
                 Config.Movies.TITTLE + " TEXT NOT NULL, " +
                 Config.Movies.VOTE + " TEXT NOT NULL, " +
                 Config.Movies.LANGUAGE + " TEXT NOT NULL, " +
