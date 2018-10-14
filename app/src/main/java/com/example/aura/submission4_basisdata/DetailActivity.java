@@ -109,8 +109,6 @@ public class DetailActivity extends AppCompatActivity {
         vote = intent.getStringExtra("vote");
         language = intent.getStringExtra("language");
 
-//        Toast.makeText(this, "" + id_movie, Toast.LENGTH_SHORT).show();
-
         Glide.with(this).load("https://image.tmdb.org/t/p/w500/" + backdrop).error(R.drawable.ic_launcher_background).into(imgBackdrop);
         Glide.with(this).load("https://image.tmdb.org/t/p/w500" + poster).error(R.drawable.ic_launcher_background).into(imgPoster);
 
@@ -122,7 +120,6 @@ public class DetailActivity extends AppCompatActivity {
 
         sharedPreferences = getApplicationContext().getSharedPreferences("SETTING", 0);
         Boolean favorit = sharedPreferences.getBoolean("Favorite"+ title, false);
-        Toast.makeText(this, "" + favorit, Toast.LENGTH_SHORT).show();
         if (favorit){
             btnFav.setAnimateFavorite(true);
             btnFav.setVisibility(View.GONE);
