@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import com.example.aura.submission4_basisdata.fragment.FavoriteFragment;
 import com.example.aura.submission4_basisdata.fragment.MovieFragment;
+import com.example.aura.submission4_basisdata.fragment.SearchFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -95,6 +96,9 @@ public class MainActivity extends AppCompatActivity
             fm.beginTransaction().replace(R.id.fm_pager_nav, new MovieFragment()).commit();
             getSupportActionBar().setTitle(R.string.movie);
         } else if (id == R.id.nav_search) {
+            fm = getSupportFragmentManager();
+            fm.beginTransaction().replace(R.id.fm_pager_nav, new SearchFragment()).commit();
+            getSupportActionBar().setTitle("search");
 
         } else if (id == R.id.nav_fav) {
             fm = getSupportFragmentManager();

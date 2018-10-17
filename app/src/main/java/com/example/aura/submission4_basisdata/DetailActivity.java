@@ -99,6 +99,7 @@ public class DetailActivity extends AppCompatActivity {
 //                finish();
 
         Intent intent = getIntent();
+
         id_movie = intent.getStringExtra("id_movie");
         poster = intent.getStringExtra("poster");
         backdrop = intent.getStringExtra("backdrop");
