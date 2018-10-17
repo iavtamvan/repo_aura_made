@@ -1,6 +1,5 @@
 package com.example.aura.submission4_basisdata.fragment;
 
-import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
